@@ -5,7 +5,15 @@ using namespace std;
 class staircase{
     public:
         staircase(int n){
-            //Complete the staircase function
+            for(int i=1;i<n+1;i++){
+                for(int k=1;k<=n-i;k++){
+                    printf(" ");  
+                }
+                for(int j=i;j>0;j--){
+                    printf("#");
+                }
+            printf("\n");
+            }
         }
 };
 
